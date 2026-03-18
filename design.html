@@ -1,43 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Registration</title>
+<title>Student Registration Form</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+.container{
+width:400px;
+margin:40px auto;
+background:orange;
+padding:30px;
+border-radius:8px;
+}
+
+h2{
+text-align:center;
+}
+
+p{
+text-align:center;
+}
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input, select{
+width:100%;
+padding:8px;
+margin-top:5px;
+border-radius:4px;
+border:1px solid #ccc;
+}
+
+.gender{
+width:auto;
+}
+
+button{
+margin-top:15px;
+padding:10px;
+width:100%;
+background:#eee;
+border:none;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#ddd;
+}
+
+</style>
+
 </head>
+
 <body>
 
+<div class="container">
+
 <h2>Student Registration Form</h2>
+<p>Fill in this form to register</p>
 
 <form>
-Name: <input type="text" name="name"><br><br>
 
-Email: <input type="email" name="email"><br><br>
+<label>First Name</label>
+<input type="text" placeholder="Enter your first name">
 
-Password: <input type="password" name="password"><br><br>
+<label>Last Name</label>
+<input type="text" placeholder="Enter your last name">
 
-Gender:
-<input type="radio" name="gender">Male
-<input type="radio" name="gender">Female<br><br>
+<label>E-mail</label>
+<input type="email" placeholder="Enter your e-mail">
 
-Course:
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Set Username</label>
+<input type="text" placeholder="Set Username">
+
+<label>Set Password</label>
+<input type="password" placeholder="Set password">
+
+<label>Gender</label>
+<input class="gender" type="radio" name="gender"> Male<br>
+<input class="gender" type="radio" name="gender"> Female<br>
+<input class="gender" type="radio" name="gender"> Others
+
+<label>Course</label>
 <select>
+<option>Course</option>
 <option>B.Tech</option>
-<option>B.Sc</option>
 <option>BCA</option>
 <option>MCA</option>
-</select><br><br>
+<option>B.Sc</option>
+</select>
 
-Hobbies:
-<input type="checkbox">Sports
-<input type="checkbox">Music
-<input type="checkbox">Reading<br><br>
-
-Address:<br>
-<textarea rows="4" cols="30"></textarea><br><br>
-
-<input type="submit" value="Register">
-<input type="reset">
+<button type="submit">Register</button>
 
 </form>
+
+</div>
 
 </body>
 </html>
